@@ -8,3 +8,7 @@ $`loss = \sum_{i}(x_{i}-model(x_{i}))^2 - \sum_{i,d}(model(x_{i})-model(x_{d}))^
 
 where the "traditional" loss is represented by the first term and the last two terms are the "contrastive" contribution. Whereas the second (negative) term maximizes the distance between the main group ($x_{i}$) and the defect ($x_{d}$) clouds; the third one (positive term) tries to compact the main group points together.
 
+
+
+**The Cauchy-Schwarz Inequality**
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
