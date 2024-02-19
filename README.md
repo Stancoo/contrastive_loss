@@ -6,7 +6,7 @@ Without applying some specific metrics your AE won't be able to distinguish them
 
 $${\rm loss} = \sum_{i}\left(x_{i} - {\rm model}(x_{i})\right)^2 - \sum_{i,d}({\rm model}(x_{i})- {\rm model}(x_{d}))^2 + \sum_{i,j}({\rm model}(x_{i})-{\rm model}(x_{j}))^2$$,
 
-where the "traditional" recovery loss is represented by the first term and the last two terms are the "contrastive" contribution. Whereas the second (negative) term maximizes the distance between the main group ($x_{i}$) and the defect ($x_{d}$) clouds; the third one (positive term) tries to compact the main group points together.
+where the "traditional" recovery loss is represented by the first term and the last two terms represent the "contrastive" contribution. Whereas the second (negative) term maximizes the distance between the main group ($x_{i}$) and the defect ($x_{d}$) clouds; the third one (positive term) tries to compact the main group points together.
 
 
 
