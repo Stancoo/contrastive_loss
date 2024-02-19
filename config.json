@@ -1,0 +1,26 @@
+{
+    "n_channels": 1,
+    "path_save_model": "model_sav",
+    "path_scratch": "scratch",
+    "batch_size_train": 100,
+    "batch_size_val": 8,
+    "seqlen": 21,
+    "height": 101,
+    "width": 101,
+    "learning_rate": 0.0005,
+    "epochs": 20000,
+    "loss_type": "mse",
+    "dtheta": 1.9,
+    "contrastive_loss":{
+	"n_outliers": 8,
+	"n_outliers_val":2,
+	"dtheta": 2.1
+    },
+    "inference": {
+	"results": "res_dtheta=1.9",
+	"weights": "model_sav/best.pth",
+	"loss_type": "mse",
+	"n_samples": 1000,
+	"random_seq": "False"
+    }
+}
