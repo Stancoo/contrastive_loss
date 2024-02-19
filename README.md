@@ -6,5 +6,5 @@ Without applying some specific metrics your AE won't be able to distinguish them
 
 $`loss = \sum_{i}(x_{i}-model(x_{i}))^2 - \sum_{i,d}(model(x_{i})-model(x_{d}))^2 + \sum_{i,j}(model(x_{i})-model(x_{j}))^2`$,
 
-where the "traditional" loss is represented by the first term and the last two terms are "contrastive" contributions. Whereas the second (negative) term maximizes the distance between the main group ($x_{i}$) and the defect ($x_{d}$) clouds; the third one (positive term) tries to compact the main group points together.
+where the "traditional" loss is represented by the first term and the last two terms are the "contrastive" contribution. Whereas the second (negative) term maximizes the distance between the main group ($x_{i}$) and the defect ($x_{d}$) clouds; the third one (positive term) tries to compact the main group points together.
 
