@@ -11,6 +11,6 @@ where the "traditional" recovery loss is represented by the first term and the l
 
 If the contrastive loss would be literally implemented as it is shown here, its backpropagation through the whole model will affect both decoder and encoder directly and might strongly spoil the converency of the recovery term. For this reason it is adviced to compute contrastive part of the loss within the latent space. Reorganizing the latent space should not dramatically affect the encoder/decoder functions connecting it with the "real" space. Taking this into account the previous expression turns to
 $${\rm loss} = \sum_{i}\left(x_{i} - {\rm model}(x_{i})\right)^2 - \sum_{i,d}\left({\rm enc}(x_{i})- {\rm enc}(x_{d})\right)^2 + \sum_{i>j}\left({\rm enc}(x_{i})-{\rm enc}(x_{j})\right)^2,$$
-where $\rm enc$ - is the encoder component of the model. The whole model is the combination of both, encoder and decoder: $${\rm model}(x) = {\rm dec}({\rm enc}(x)).$$
+where $\rm enc$ - is the encoder component of the model. The whole model is the combination of both, encoder and decoder: ${\rm model}(x) = {\rm dec}({\rm enc}(x)).$
 
 
