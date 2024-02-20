@@ -19,7 +19,40 @@ where $\rm enc$ - is the encoder component of the model. The whole model is the 
 
 ## Current repo
 
-To demonstrate the advantage of the contrastive loss account on a particular example,  as a model we take a version of the so-called <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1">Spatio-Temporal AE</a> translated into Pytorch. It is intended to classify the video fragments in a binary sense, i.e. normal/anomal. As an input it takes a sequence of frames of the fixed length, defined in `config.json`: `"seq_len":21`. The sequences will be all formed by taking the same  $101\times 101$ "coin" image `img.png` and rotating it by 2 degrees from frame to frame:
+To demonstrate the advantage of the contrastive loss account on a particular example,  as a model we take a version of the so-called <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1">Spatio-Temporal AE</a> translated into Pytorch. It is intended to classify the video fragments in a binary sense, i.e. normal/anomal. Training and testing procedures are configured in `config.json`. It looks as follows:
+
+```
+{
+    "n_channels": 1,
+    "path_save_model": "model_sav",
+    "path_scratch": "scratch",
+    "batch_size_train": 100,
+    "batch_size_val": 8,
+    "seqlen": 21,
+    "height": 101,
+    "width": 101,
+    "learning_rate": 0.0005,
+    "epochs": 20000,
+    "loss_type": "mse",
+    "dtheta": 1.9,
+    "contrastive_loss":{
+	"n_outliers": 8,
+	"n_outliers_val":2,
+	"dtheta": 2.1
+    },
+    "inference": {
+	"results": "res_dtheta=1.9",
+	"weights": "model_sav/best.pth",
+	"loss_type": "mse",
+	"n_samples": 1000,
+	"random_seq": "False"
+    }
+}
+
+```
+
+
+As an input it takes a sequence of frames of the fixed length, defined in `config.json`: `"seq_len":21`. The sequences will be all formed by taking the same  $101\times 101$ "coin" image `img.png` and rotating it by 2 degrees from frame to frame:
 <p align="center"> <img title="Sequence of 21 frames, used as an input. Each frame is obtained by rotating the previous one by 2 degrees." alt="Fig." src="/pics/fig3_sequence.png" width=80% style="display: block; margin: auto" >
 
 In `config.json` the corresponding entry is `"d_theta":2.0`. Since the start angle is arbitrary, we can generate such sequences infinitely. For this reason, the the epoch consists of a single batch. One train batch contains `"batch_size_train": 100` sequences.
