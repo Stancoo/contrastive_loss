@@ -19,4 +19,4 @@ where $\rm enc$ - is the encoder component of the model. The whole model is the 
 
 ## Current repo
 
-Here the aim is to demonstrate the advantage of the contrastive loss account on a particular example. Here we will use the version of so-called <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1">Spatio-Temporal AE</a> 
+Here the aim is to demonstrate the advantage of the contrastive loss account on a particular example. Here we will use the version of the so-called <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1">Spatio-Temporal AE</a> translated into Pytorch.
