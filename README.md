@@ -58,4 +58,5 @@ As an input the model takes a sequence of frames of the fixed length, defined in
 In `config.json` the corresponding entry is `"d_theta":2.0`. Since the start angle is arbitrary, we can generate such sequences infinitely. For this reason, one epoch consists of a single batch. One training batch contains `"batch_size_train": 100` sequences. Each frame will be brought to the fixed "height" $\times$ "width" format as defined in `config.json`: `"height": 101`, `"width": 101`; `"n_channels": 1` takes care of the grayscale.
 
 To start training all you need is:
-   `python3 main_train.py`
+
+`python3 main_train.py`
