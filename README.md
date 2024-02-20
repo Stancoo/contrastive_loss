@@ -62,6 +62,8 @@ By starting from scratch, you better switch off contrastive loss completely, by 
     "contrastive_loss":{
 	"n_outliers": 0,
 	"n_outliers_val": 0,
+	...
+    }		
 ```
 
 To start training all you need is:
