@@ -21,3 +21,5 @@ where $\rm enc$ - is the encoder component of the model. The whole model is the 
 
 To demonstrate the advantage of the contrastive loss account on a particular example,  as a model we take a version of the so-called <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1">Spatio-Temporal AE</a> translated into Pytorch. It is intended to classify the video fragments in a binary sense, i.e. normal/anomal. As an input it takes a sequence of frames of the fixed length, defined in `config.json`: `"seq_len":21`. The sequences will be all formed by taking the same  $101\times 101$ "coin" image `img.png` and rotating it by 2 degrees from frame to frame:
 <p align="center"> <img title="Sequence of 21 frames, used as an input. Each frame is obtained by rotating the previous one by 2 degrees." alt="Fig." src="/pics/fig3_sequence.png" width=80% style="display: block; margin: auto" >
+In `config.json` the corresponding entry is `"d_theta":2.0`
+Since the start angle is arbitrary, we can generate such sequences infinitely. 
