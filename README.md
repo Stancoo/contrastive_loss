@@ -59,4 +59,4 @@ In `config.json` the corresponding entry is `"d_theta":2.0`. Since the start ang
 
 To start training all you need is:
 
-   `python3 main_train.py`
+   ``python3 main_train.py``
