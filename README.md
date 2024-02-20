@@ -52,7 +52,7 @@ To demonstrate the advantage of the contrastive loss account on a particular exa
 ```
 
 
-As an input the model takes a sequence of frames of the fixed length, defined in `config.json` as `"seq_len":21`. The sequences will be all formed by replicating the same  $101\times 101$ "coin" image `img.png` which is  rotated by 2 degrees from frame to frame:
+As an input the model takes a sequence of frames of the fixed length, defined in `config.json` as `"seq_len":21`. The sequences will be all formed by replicating the same "coin" image `img.png` which is  rotated by 2 degrees from frame to frame:
 <p align="center"> <img title="Sequence of 21 frames, used as an input. Each frame is obtained by rotating the previous one by 2 degrees." alt="Fig." src="/pics/fig3_sequence.png" width=80% style="display: block; margin: auto" >
 
-In `config.json` the corresponding entry is `"d_theta":2.0`. Since the start angle is arbitrary, we can generate such sequences infinitely. For this reason, one epoch consists of a single batch. One training batch contains `"batch_size_train": 100` sequences.
+In `config.json` the corresponding entry is `"d_theta":2.0`. Since the start angle is arbitrary, we can generate such sequences infinitely. For this reason, one epoch consists of a single batch. One training batch contains `"batch_size_train": 100` sequences. Each frame will have the size "height"$\times$"width", both defined in `config.json`
