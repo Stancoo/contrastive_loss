@@ -34,7 +34,7 @@ To demonstrate the advantage of the contrastive loss account on a particular exa
     "learning_rate": 0.0005,
     "epochs": 20000,
     "loss_type": "mse",
-    "dtheta": 1.9,
+    "dtheta": 2.0,
     "contrastive_loss":{
 	"n_outliers": 8,
 	"n_outliers_val":2,
