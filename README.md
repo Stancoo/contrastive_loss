@@ -11,8 +11,7 @@ where the "traditional" recovery loss is represented by the first term and the l
 
 <p align="center"> <img title="Schematic representation of the contrastive loss contributions. The defects are shown as red. The aim is to minimize the sum of the distances between the main-group elements (black connectors) and to maximize the sum of the distances between main-group  and the defects (red connectors)." alt="Fig." src="/pics/fig2.svg" width=50% style="display: block; margin: auto" >
 
-It is important to admit, that the contrastive loss is not a real loss in the sense of the AE paradigm, i.e., the contrastive loss does not care about the recovery as the very first term ("traditional") in the loss expression above does.
-
+It is important to admit, that the contrastive loss is not a real loss in the sense of the AE paradigm, i.e., the contrastive loss does not care about the recovery as the very first term ("traditional") in the total loss expression above does. Contrastive loss is just a penalty which takes care only of to make the defects as distinct as possible from the main-group elements.
 
 If the contrastive loss would be literally implemented as it is shown here, its backpropagation through the whole model will affect both decoder and encoder directly and might strongly spoil the converency of the recovery term. For this reason it is adviced to compute contrastive part of the loss within the latent space. Reorganizing the latent space should not dramatically affect the encoder/decoder functions connecting it with the "real" space. Taking this into account the previous expression turns to
 $${\rm loss} = \sum_{i}\left(x_{i} - {\rm model}(x_{i})\right)^2 - \sum_{i,d}\left({\rm enc}(x_{i})- {\rm enc}(x_{d})\right)^2 + \sum_{i>j}\left({\rm enc}(x_{i})-{\rm enc}(x_{j})\right)^2,$$
