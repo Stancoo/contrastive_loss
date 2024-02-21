@@ -1,5 +1,6 @@
 ## What it is all about
 
+# Main idea
 Typical problem while applying the <a href="https://en.wikipedia.org/wiki/Autoencoder">autoencoders</a>  (AE) is connected with the fact that we are looking not just for all possible outliers which our AE can deliver, but only for some *specific ones* defined according to some particular criteria, e.g. set by a customer. Let's call such outliers "defects". E.g., by applying an AE within the production line which produces defects rarely it can happen that the other types of outliers will be estimated by an AE even stronger than the defects:
 
 <p align="center"> <img title="Upper panel: schematic distribution of elements depicted as points. The defects are shown as red. Lower panel: schematic loss distribution delivered by an AE-model. Vertical line approximately separates outliers from the main group. Red rods correspond to defects." alt="Fig." src="/pics/fig1.svg" width=25% style="display: block; margin: auto" >
