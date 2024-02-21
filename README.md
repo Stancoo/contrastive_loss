@@ -22,7 +22,7 @@ where $\rm enc$ - is the encoder component of the model. The whole model is the 
 
 ## Current repo
 
-To demonstrate the advantage of the contrastive loss account on a particular example, as a  <a href="model_convlstm_ae.py">model</a> we take a version of the so-called <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1">Spatio-Temporal AE</a> translated into Pytorch. It is intended to classify the video fragments in a binary sense, i.e. normal/anomal. Training and testing procedures are configured in `config.json`:
+To demonstrate the advantage of the contrastive loss account on a particular example, as a  <a href="model_convlstm_ae.py">model</a> we take a version of the so-called <a href="https://link.springer.com/article/10.1007/s10489-022-03613-1">Spatio-Temporal AE</a> translated into Pytorch. The model is intended to binary classify the video fragments, i.e. as "normal/anomal". Training and testing procedures are configured in `config.json`:
 
 ```
 {
