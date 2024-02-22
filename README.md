@@ -89,7 +89,8 @@ As it follows from the plot, the train loss almost coinsides with the validation
 
 The train output looks as following:
 
-<p align="center">
+
+```
 epoch          0  loss_t  734.32562  loss_v  720.33147  loss_min  9999.00000
 epoch          1  loss_t  720.38177  loss_v  707.68294  loss_min  9999.00000
 epoch          2  loss_t  708.11975  loss_v  715.80850  loss_min  9999.00000
@@ -103,8 +104,9 @@ epoch          9  loss_t  686.83411  loss_v  682.44596  loss_min  9999.00000
 epoch         10  loss_t  682.11365  loss_v  675.76274  loss_min  9999.00000
 epoch         11  loss_t  675.48157  loss_v  674.57050  loss_min  674.57050
 epoch         12  loss_t  673.97961  loss_v  672.83231  loss_min  672.83231
-epoch         13  loss_t  672.78430  loss_v  672.57436  loss_min  672.57436
-</p>
+epoch         13  loss_t  672.78430  loss_v  672.57436  loss_min  672.57436`
+```
+
 
 Once the training is finished let us check the results 
 
