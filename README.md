@@ -75,7 +75,7 @@ To start training all you need is:
 
 After each 10 epochs the script writes the validation images into `scratch` folder (defined in `config.json` as `"path_scratch": "scratch"`):
 
-<p float="left">
+<p float="center">
   <img src="pics/scratch_traditional/0000_grt-rec_720.331.png" width=20% />
   <img src="pics/scratch_traditional/0100_grt-rec_416.829.png" width=20% />
   <img src="pics/scratch_traditional/0200_grt-rec_256.171.png" width=20% />
