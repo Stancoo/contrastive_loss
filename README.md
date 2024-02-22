@@ -54,7 +54,7 @@ To demonstrate the advantage of the contrastive loss account on a particular exa
 
 ```
 
-
+### Training
 As input the  model takes a fixed-length sequence of frames,  defined in `config.json` as `"seq_len":21`. The sequences are produced by replicating the same "coin" image `img.png` rotated clockwise by, say, two degrees from frame to frame:
 <p align="center"> <img title="Sequence of 21 frames, used as an input. Each frame is obtained by rotating the previous one by 2 degrees." alt="Fig." src="/pics/fig3_sequence.png" width=80% style="display: block; margin: auto" >
 
