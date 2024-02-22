@@ -86,3 +86,26 @@ The image filenames also include the corresponding loss values: 720.331 (epoch=0
   <img src="pics/scratch_traditional/progress.png" width=60% />
 </p>
 As it follows from the plot, the train loss almost coinsides with the validation loss. The first plateu corresponds to the recovery of the numbers "78" and the second - to the recovery of the margin of a coin.
+
+The train output looks as following:
+
+<p align="center">
+epoch          0  loss_t  734.32562  loss_v  720.33147  loss_min  9999.00000
+epoch          1  loss_t  720.38177  loss_v  707.68294  loss_min  9999.00000
+epoch          2  loss_t  708.11975  loss_v  715.80850  loss_min  9999.00000
+epoch          3  loss_t  716.32477  loss_v  703.56097  loss_min  9999.00000
+epoch          4  loss_t  703.72540  loss_v  702.49293  loss_min  9999.00000
+epoch          5  loss_t  702.78949  loss_v  700.72666  loss_min  9999.00000
+epoch          6  loss_t  700.92908  loss_v  697.10589  loss_min  9999.00000
+epoch          7  loss_t  696.99084  loss_v  690.58743  loss_min  9999.00000
+epoch          8  loss_t  690.54858  loss_v  687.38532  loss_min  9999.00000
+epoch          9  loss_t  686.83411  loss_v  682.44596  loss_min  9999.00000
+epoch         10  loss_t  682.11365  loss_v  675.76274  loss_min  9999.00000
+epoch         11  loss_t  675.48157  loss_v  674.57050  loss_min  674.57050
+epoch         12  loss_t  673.97961  loss_v  672.83231  loss_min  672.83231
+epoch         13  loss_t  672.78430  loss_v  672.57436  loss_min  672.57436
+</p>
+
+Once the training is finished let us check the results 
+
+
