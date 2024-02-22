@@ -85,4 +85,4 @@ The image filenames also include the corresponding loss values: 720.331 (epoch=0
 <p align="center">
   <img src="pics/scratch_traditional/progress.png" width=60% />
 </p>
-As it follows from the plot, the train loss almost coinsides with the validation loss. The first step corresponds to the recovery of the numbers "78" and the second - to the recovery of the margin of a coin.
+As it follows from the plot, the train loss almost coinsides with the validation loss. The first plateu corresponds to the recovery of the numbers "78" and the second - to the recovery of the margin of a coin.
