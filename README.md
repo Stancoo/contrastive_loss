@@ -60,6 +60,7 @@ As input the  model takes a fixed-length sequence of frames,  defined in `config
 
 In `config.json` the corresponding entry is `"d_theta":2.0`. Since the starting angle is arbitrary, we can generate infinite number of such sequences. For this reason, one epoch will consist of a single batch. The batch size is given by `"batch_size_train": 100` sequences. Each frame is brought to the fixed "height" $\times$ "width" format as defined in `config.json`: `"height": 101`, `"width": 101`; `"n_channels": 1` takes care of the grayscale.
 
+#### "conventional" training step
 By starting from scratch, we first switch of contrastive loss completely, by setting
 ```
     "contrastive_loss":{
