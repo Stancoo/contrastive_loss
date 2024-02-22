@@ -104,9 +104,12 @@ epoch          9  loss_t  686.83411  loss_v  682.44596  loss_min  9999.00000
 epoch         10  loss_t  682.11365  loss_v  675.76274  loss_min  9999.00000
 epoch         11  loss_t  675.48157  loss_v  674.57050  loss_min  674.57050
 epoch         12  loss_t  673.97961  loss_v  672.83231  loss_min  672.83231
-epoch         13  loss_t  672.78430  loss_v  672.57436  loss_min  672.57436`
+epoch         13  loss_t  672.78430  loss_v  672.57436  loss_min  672.57436
+...
+epoch       2110  loss_t  26.73004  loss_v  26.27424  loss_min  26.19759
+epoch       2111  loss_t  26.46295  loss_v  24.98747  loss_min  24.98747
 ```
-
+where `loss_t`, `loss_v` are the train and validation losses. `loss_min` - minimal validation loss achieved so far.
 
 Once the training is finished let us check the results 
 
