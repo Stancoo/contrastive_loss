@@ -72,7 +72,7 @@ and run conventional AE training untill accepted convergecy. All relevant traini
 
 `python3 main_train.py`
 
-After each 10 epochs the script writes the validation images into `scratch` folder (defined in `config.json` as `"path_scratch": "scratch"`). Below we shown the validation batches (8 odd columns correspond to the input, 8 even - to the recovered sequences), after 0, 100, 200 and 2000 training epochs, respectively:
+After each 10 epochs the script writes the validation images into `scratch` folder (defined in `config.json` as `"path_scratch": "scratch"`). Below are shown the validation batches (8 odd columns correspond to the input, 8 even - to the recovered sequences), after 0, 100, 200 and 2000 training epochs, respectively:
 
 <p align="center">
   <img src="pics/scratch_traditional/0000_grt-rec_720.331.png" width=24% />
