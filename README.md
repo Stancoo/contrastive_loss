@@ -60,7 +60,7 @@ As input the  model takes a fixed-length sequence of frames,  defined in `config
 
 In `config.json` the corresponding entry is `"d_theta":2.0`. Since the starting angle is arbitrary, we can generate infinite number of such sequences. For this reason, one epoch will consist of a single batch. The batch size is given by `"batch_size_train": 100` sequences. Each frame is brought to the fixed "height" $\times$ "width" format as defined in `config.json`: `"height": 101`, `"width": 101`; `"n_channels": 1` takes care of the grayscale.
 
-By starting from scratch, you better switch off contrastive loss completely, by setting
+By starting from scratch, we first switch of contrastive loss completely, by setting
 ```
     "contrastive_loss":{
 	"n_outliers": 0,
@@ -68,8 +68,7 @@ By starting from scratch, you better switch off contrastive loss completely, by 
 	...
     }		
 ```
-
-To start training all you need is:
+and run conventional AE training untill accepted convergecy. All relevant training parameters like number of epochs, learning rate and the training and validation batch sized  you will find in `config.json`.  To start the training all you need is:
 
 `python3 main_train.py`
 
