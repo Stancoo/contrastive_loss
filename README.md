@@ -56,7 +56,7 @@ To demonstrate the advantage of the contrastive loss account on a particular exa
 
 ### Training
 As input the  model takes a fixed-length sequence of frames,  defined in `config.json` as `"seq_len":21`. The sequences are produced by replicating the same "coin" image `img.png` rotated clockwise by, say, two degrees from frame to frame:
-<p align="center"> <img title="Sequence of 21 frames, used as an input. Each frame is obtained by rotating the previous one by 2 degrees." alt="Fig." src="/pics/fig3_sequence.png" width=80% style="display: block; margin: auto" >
+<p align="center"> <img title="Sequence of 21 frames, used as an input. Each frame is obtained by rotating the previous one by 2 degrees." alt="Fig." src="/pics/fig3_sequence.png" width=80% style="display: block; margin: auto" ></p>
 
 In `config.json` the corresponding entry is `"d_theta":2.0`. Since the starting angle is arbitrary, we can generate infinite number of such sequences. For this reason, one epoch will consist of a single batch. The batch size is given by `"batch_size_train": 100` sequences. Each frame is brought to the fixed "height" $\times$ "width" format as defined in `config.json`: `"height": 101`, `"width": 101`; `"n_channels": 1` takes care of the grayscale.
 
@@ -71,7 +71,7 @@ By starting from scratch, you better switch off contrastive loss completely, by 
 
 To start training all you need is:
 
-   `python3 main_train.py`
+ <p style="text-align: center;">  `python3 main_train.py`</p>
 
 
 After each 10 epochs the script will save the validation results into `scratch` folder (defined in `config.json` as `"path_scratch": "scratch"`)  as images:
