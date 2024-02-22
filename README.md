@@ -81,4 +81,8 @@ After each 10 epochs the script writes the validation images into `scratch` fold
   <img src="pics/scratch_traditional/0200_grt-rec_256.171.png" width=24% />
   <img src="pics/scratch_traditional/2000_grt-rec_118.862.png" width=24% />
 </p>
-The image filenames also include the corresponding loss values: 720.331 (epoch=0), ... , 118.862 (epoch=2000). The model weights will be saved in the folder specified in the `config.json`: `"path_save_model": "model_sav"`. 
+The image filenames also include the corresponding loss values: 720.331 (epoch=0), ... , 118.862 (epoch=2000). The model weights will be saved in the folder specified in the `config.json`: `"path_save_model": "model_sav"`. The loss evolution for this example looks approximately as: 
+<p align="center">
+  <img src="pics/scratch_traditional/progress.svg" width=60% />
+</p>
+On this scale the train loss almost coinsides with the validation loss. The first step corresponds to the recovery of the numbers "78" and the second - to the recovery of the margin of a coin.
