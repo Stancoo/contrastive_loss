@@ -70,8 +70,7 @@ By starting from scratch, you better switch off contrastive loss completely, by 
 ```
 
 To start training all you need is:
-
-`                                   python3 main_train.py`
+- `python3 main_train.py`
 
 
 After each 10 epochs the script will save the validation results into `scratch` folder (defined in `config.json` as `"path_scratch": "scratch"`)  as images:
