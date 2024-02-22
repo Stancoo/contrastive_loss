@@ -80,4 +80,4 @@ After each 10 epochs the script writes the validation images into `scratch` fold
   <img src="pics/scratch_traditional/0200_grt-rec_256.171.png" width=24% />
   <img src="pics/scratch_traditional/2000_grt-rec_118.862.png" width=24% />
 </p>
-These filenames also include the corresponding loss values: 720.331@epoch=0, ... , 118.862@epoch=2000.
+The image filenames also include the corresponding loss values: 720.331 (epoch=0), ... , 118.862 (epoch=2000).
