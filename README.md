@@ -135,8 +135,7 @@ One can repeat the same procedure to create and validate different sorts of outl
       ...
       "inference": {
       "results": "res_dtheta=1.0",
-      ...
-  ```   
+      ...  ```     
 or to rotate them in the opposite direction:
 
 - ```
