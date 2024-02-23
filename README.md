@@ -159,4 +159,5 @@ Lets collect all these histograms in one plot:
 <p align="center">
   <img src="pics/res_traditional/hist_traditional.svg" width=80% />
 </p>
+
 As it follows, even extremely small deviations from the main group corresponding to `theta=2`, such as `theta=2.1, 1.9` (gray, orange) can be distinguished in the loss histogram by the model.
