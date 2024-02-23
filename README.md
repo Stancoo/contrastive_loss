@@ -130,7 +130,8 @@ The choice how to plot y(x) data, I would leave to you. Here it looks like as:
 
 
 One can repeat the same procedure to create and validate different sorts of outliers.  For example, we can validate the sequences with different rotation rates, by changing `dtheta` angle in `config.json`:
-- ``` "dtheta": 1.0,
+- ```
+      "dtheta": 1.0,
       ...
       "inference": {
       "results": "res_dtheta=1.0",
