@@ -183,5 +183,8 @@ In our example we can simply generate them.  All you need to do is to change in 
     },
 ```
 
-which means that, our train batch will now consist of `batch_size_train` main-group elements (corresponding to `dtheta=2`) + `n_outliers` defect elements (corresponding to `dtheta=2.1`), i.e. 100 + 8 = 118. The main-group elements will be treated as before, i.e. the model will get optimized to get their best recovery, whereas for the last 8 defect elements only contrastive loss will be minimized (of course, in combination with the main-group elements according to the <a href="#loss">loss expression</a>). `"n_outliers_val": 2` is referred to the analogical validation batch extension. As a starting point the weights `model_sav/best.pth` converged in conventional sense will be used. 
+which means that, our train batch will now consist of `batch_size_train` main-group elements (corresponding to `dtheta=2`) + `n_outliers` defect elements (corresponding to `dtheta=2.1`), i.e. 100 + 8 = 118. The main-group elements will be treated as before, i.e. the model will get optimized to get their best recovery, whereas for the last 8 defect elements only contrastive loss will be minimized (of course, in combination with the main-group elements according to the <a href="#loss">loss expression</a>). `"n_outliers_val": 2` is referred to the analogical validation batch extension. As a starting point the weights `model_sav/best.pth` converged in conventional sense will be used. To start training,
+
+`python3 main_train.py`
+
  
