@@ -114,3 +114,10 @@ where `loss_t`, `loss_v` - are the train and validation losses; `loss_min` - min
 Once the training is finished let us a bit explore the results. For testing all you need is to run 
 
 `python3 main_inf.py`
+
+First lets check the main group. For this we keep `dtheta: 2.0` and change name the output folder to "res_native":
+
+```
+"inference": {
+	"results": "res_native",
+```
