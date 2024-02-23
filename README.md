@@ -156,7 +156,7 @@ or to generate completely random sequences:
       "random_seq": "True",
       ...```
 
-Lets collect all these histograms in one plot:
+Let's collect all these histograms in one plot:
 
 <p align="center">
   <img src="pics/res_traditional/hist_traditional.svg" width=80% />
@@ -167,4 +167,4 @@ Indeed, in the range of ${\rm loss}<500$  it is difficult to notice the recovery
 
 ### Contrastive loss
 
-Here starts the most interesting part.
+Here starts the most interesting part. Let's suppose that the above mentioned defects, which we are interested in, are say the `dtheta=2.1` sequences.
