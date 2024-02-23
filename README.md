@@ -137,5 +137,19 @@ One can repeat the same procedure to create and validate different sorts of outl
       "results": "res_dtheta=1.0",
       ..
 ```
-  
-
+or to rotate them in the opposite direction:
+- ```
+      "dtheta": -2.0,
+      ...
+      "inference": {
+      "results": "res_dtheta=-2.0",
+      ..
+```
+or by generating completely random sequences:
+- ```
+      ...
+      "inference": {
+      "results": "res_random",
+      "random_seq": "True",
+      ..
+```
