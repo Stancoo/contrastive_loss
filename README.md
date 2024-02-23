@@ -54,13 +54,13 @@ To demonstrate the advantage of the contrastive loss account on a particular exa
 
 ```
 
-### Training
+
 As input the  model takes a fixed-length sequence of frames,  defined in `config.json` as `"seq_len":21`. The sequences are produced by replicating the same "coin" image `img.png` rotated clockwise by, say, two degrees from frame to frame:
 <p align="center"> <img title="Sequence of 21 frames, used as an input. Each frame is obtained by rotating the previous one by 2 degrees." alt="Fig." src="/pics/fig3_sequence.png" width=80% style="display: block; margin: auto" ></p>
 
 In `config.json` the corresponding entry is `"d_theta":2.0`. Since the starting angle is arbitrary, we can generate infinite number of such sequences. For this reason, one epoch will consist of a single batch. The batch size is given by `"batch_size_train": 100` sequences. Each frame is brought to the fixed "height" $\times$ "width" format as defined in `config.json`: `"height": 101`, `"width": 101`; `"n_channels": 1` takes care of the grayscale.
 
-#### "conventional" training
+### "Conventional" training
 By starting from scratch, we first switch of contrastive loss completely, by setting
 ```
     "contrastive_loss":{
@@ -113,7 +113,7 @@ epoch       2111  loss_t  26.46295  loss_v  24.98747  loss_min  24.98747
 where `loss_t`, `loss_v` - are the train and validation losses; `loss_min` - minimal validation loss achieved so far.
 
 
-#### validation and analysis
+### Validation and analysis
 Once the training is finished let us a bit explore the results. For testing all you need is to run 
 
 `python3 main_inf.py`
