@@ -143,14 +143,12 @@ or to rotate them in the opposite direction:
       ...
       "inference": {
       "results": "res_dtheta=-2.0",
-      ...
-```
+      ... ```
+or to generate completely random sequences:
 
-or by generating completely random sequences:
 - ```
       ...
       "inference": {
       "results": "res_random",
       "random_seq": "True",
-      ...
-```
+      ...```
