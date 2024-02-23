@@ -167,4 +167,4 @@ Indeed, in the range of ${\rm loss}<500$  it is difficult to notice the recovery
 
 ### Contrastive loss
 
-Here starts the most interesting part. Let's suppose that the "defects" your customer is interested in, are say, the `dtheta=2.1` sequences (gray distribution at ${\rm loss}\approx45$)  and nothing else. Actually, it's a pretty difficult case. Indeed, there is no way to distinguish them from other outliers situated even  more far along the loss scale.
+Here starts the most interesting part. Let's suppose that the "defects" your customer is interested in, are say, the `dtheta=2.1` sequences (gray distribution at ${\rm loss}\approx45$)  and nothing else. Actually, it's a pretty difficult case. Indeed, there is no way to distinguish them from other outliers situated even  more far along the loss scale. But if customer could give you few examples of how these defects look like, you might be lucky to push these states far away to distinct from other outliers with the help of the contrastive loss approach.
