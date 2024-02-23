@@ -168,3 +168,14 @@ Indeed, in the range of ${\rm loss}<500$  it is difficult to notice the recovery
 ### Contrastive loss
 
 Here starts the most interesting part. Let's suppose that the "defects" your customer is interested in are, say, the `dtheta=2.1` sequences (gray distribution at ${\rm loss}\approx45$)  and nothing else. Actually it's a pretty difficult case. Indeed, there is no way to distinguish them from other outliers situated even  more far along the loss scale. But if your customer could give you few examples of how these defects look like, you might be lucky to push these states far away to distinct them from other outliers with the help of the contrastive loss penalty.
+
+In our example we can simply generate them.  All you need to do is to change in `config.json` the `"contrustive loss"` entry as:
+```
+    "contrastive_loss":{
+	"n_outliers": 8,
+	"n_outliers_val": 2,
+	"dtheta": 2.1
+    },
+``
+which means that, our train batch will now consist of `batch_size_train` main-group elements (corresponding to `dtheta=2`) + `n_outliers` defects (corresponding to `dtheta=2.1`): i.e., 100 + 8 = 118. The main-group elements will be treated as before, i.e. the model will be optimized to get the best recovery, whereas for the last 8 defect elements the contrastive loss only will be applied.
+ 
