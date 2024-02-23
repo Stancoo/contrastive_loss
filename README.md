@@ -195,3 +195,5 @@ Now the batch images in `scratch` folder will contain two pairs of additional co
   <img src="pics/scratch_contrastive/6510_grt-rec_12.0645.png" width=24% />
   <img src="pics/scratch_contrastive/9990_grt-rec_-1.6631.png" width=24% />
 </p>
+
+As it follows, the first 8 pairs of columns show a good recovery in all examples.
