@@ -156,7 +156,7 @@ or to generate completely random sequences:
       "random_seq": "True",
       ...```
 
-You might continue to play around inventing all possible deviations from the main group, but let's then collect all these histograms in one plot:
+You might continue to play around inventing various deviations from the main group, but let's then collect all these histograms in one plot:
 
 <p align="center">
   <img src="pics/res_traditional/hist_traditional.svg" width=80% />
