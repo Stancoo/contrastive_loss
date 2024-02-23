@@ -156,3 +156,6 @@ or to generate completely random sequences:
 
 Here we collect all histograms in one plot:
 
+<p align="center">
+  <img src="pics/res_traditional/hist_traditional.svg" width=80% />
+</p>
