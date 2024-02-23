@@ -122,7 +122,11 @@ First lets check the main group. For this we keep `dtheta: 2.0` and change name 
 	"results": "res_native",
 ```
 The script will write 1000 of validation images into it in a format `<index>_<loss>.png`, as well as a histogram of the collected losses (as two-column ASCII table of x- and y- values) - `histogram.dat`.
-The choice how to plot y(x) data, I would leave to you.
+The choice how to plot y(x) data, I would leave to you. Here it looks like as: 
+<p align="center">
+  <img src="pics/hist_native.png" width=60% />
+</p>
 
-The same procedure we can repeat to create and validate different sorts of outliers.  For example, we can validate the sequences 
+
+One can repeat the same procedure to create and validate different sorts of outliers.  For example, we can validate the sequences 
 
