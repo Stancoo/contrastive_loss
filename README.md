@@ -130,7 +130,6 @@ The choice how to plot y(x) data, I would leave to you. Here it looks like as:
   <img src="pics/hist_native.png" width=60% />
 </p>
 
-
 One can repeat the same procedure to create and validate different sorts of outliers.  For example, we can validate the sequences with different rotation rates, by changing `dtheta` angle in `config.json`:
 - ```
       "dtheta": 1.0,
@@ -154,3 +153,9 @@ or to generate completely random sequences:
       "results": "res_random",
       "random_seq": "True",
       ...```
+
+Here we collect all histograms in one plot:
+
+<p align="center">
+  <img src="pics/res_traditional/hist.svg" width=80% />
+</p>
