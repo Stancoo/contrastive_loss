@@ -113,7 +113,7 @@ epoch       2111  loss_t  26.46295  loss_v  24.98747  loss_min  24.98747
 where `loss_t`, `loss_v` - are the train and validation losses; `loss_min` - minimal validation loss achieved so far.
 
 
-#### validation
+#### validation and analysis
 Once the training is finished let us a bit explore the results. For testing all you need is to run 
 
 `python3 main_inf.py`
