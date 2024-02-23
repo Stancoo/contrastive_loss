@@ -187,7 +187,7 @@ which means that, our train batch will now consist of `batch_size_train` main-gr
 
 `python3 main_train.py`
 
-Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top:
+Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs, respectively:
 
 <p align="center">
   <img src="pics/scratch_contrastive/4240_grt-rec_15.1345.png" width=24% />
