@@ -157,5 +157,5 @@ or to generate completely random sequences:
 Here we collect all histograms in one plot:
 
 <p align="center">
-  <img src="pics/res_traditional/hist.pdf" width=80% />
+  <img src="pics/res_traditional/hist.png" width=80% />
 </p>
