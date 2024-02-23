@@ -121,5 +121,6 @@ First lets check the main group. For this we keep `dtheta: 2.0` and change name 
 "inference": {
 	"results": "res_native",
 ```
-The script will write 1000 of validation images into it as well as a histogram out of the collected losses (as two-column ASCII table of x- and y- values) - `histogram.dat`.
+The script will write 1000 of validation images into it in a format `<index>_<loss>.png`, as well as a histogram of the collected losses (as two-column ASCII table of x- and y- values) - `histogram.dat`.
+The choice how to plot y(x) data, I would leave to you. The same procedure can repeat to create and evaluate different sorts of outliers.
 
