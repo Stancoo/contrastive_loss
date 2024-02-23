@@ -163,4 +163,4 @@ Lets collect all these histograms in one plot:
 </p>
 
 As it follows, even extremely small deviations from the main group (seen as black vertical line very close to the origin), such as `theta=2`, such as `theta=2.1, 1.9` (in gray and orange), can be distinguished in the loss histogram by the model.
-Indeed, in the range of $loss<500$  it difficult to notice the recovery inaccuracies. Only at $loss>550$  they become pronounced. 
+Indeed, in the range of ${\rm loss}<500$  it difficult to notice the recovery inaccuracies. Only at ${\rm loss}>550$  they become pronounced. 
