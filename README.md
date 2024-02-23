@@ -121,5 +121,5 @@ First lets check the main group. For this we keep `dtheta: 2.0` and change name 
 "inference": {
 	"results": "res_native",
 ```
-
+The script will write 1000 of validation images into it and write a histogram out of the collected losses (as two-column ASCII table of x- and y- values)
 
