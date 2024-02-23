@@ -118,9 +118,11 @@ Once the training is finished let us a bit explore the results. For testing all 
 
 `python3 main_inf.py`
 
-First lets check the main group. For this we keep `dtheta: 2.0` and change name the output folder to `res_native`:
+First lets check the main group. For this we keep `"dtheta": 2.0` and change name the output folder to `res_native`:
 
 ```
+"dtheta": 2.0,
+...
 "inference": {
 	"results": "res_native",
 ```
