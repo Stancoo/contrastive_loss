@@ -188,3 +188,10 @@ which means that, our train batch will now consist of `batch_size_train` main-gr
 `python3 main_train.py`
 
 Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top:
+
+<p align="center">
+  <img src="pics/scratch_contrastive/4240_grt-rec_15.1345.png" width=24% />
+  <img src="pics/scratch_traditional/6450_grt-rec_10.4054.png" width=24% />
+  <img src="pics/scratch_traditional/6510_grt-rec_12.0645.png" width=24% />
+  <img src="pics/scratch_traditional/9990_grt-rec_-1.6631.png" width=24% />
+</p>
