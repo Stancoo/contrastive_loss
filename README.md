@@ -16,7 +16,7 @@ It is important to stress, that the contrastive loss is not a real loss in the s
 
 ### Latent space
 If to implement contrastive loss literally as it is shown above, its backpropagation through the whole model will affect both decoder and encoder directly and might strongly spoil the converency of the recovery term. For this reason it is adviced to compute contrastive part of the loss within the latent space. Reorganizing the latent space should not dramatically affect the encoder/decoder functions connecting it with the "real" space. Taking this into account the previous expression turns to
-$${\rm loss} = \sum_{i}\left(x_{i} - {\rm model}(x_{i})\right)^2 - \sum_{i,d}\left({\rm enc}(x_{i})- {\rm enc}(x_{d})\right)^2 + \sum_{i>j}\left({\rm enc}(x_{i})-{\rm enc}(x_{j})\right)^2,$$
+<a name="loss"> $${\rm loss} = \sum_{i}\left(x_{i} - {\rm model}(x_{i})\right)^2 - \sum_{i,d}\left({\rm enc}(x_{i})- {\rm enc}(x_{d})\right)^2 + \sum_{i>j}\left({\rm enc}(x_{i})-{\rm enc}(x_{j})\right)^2,$$</a>
 where $\rm enc$ - is the encoder component of the model. The whole model is the combination of both, encoder and decoder: ${\rm model}(x) = {\rm dec}({\rm enc}(x)).$
 
 
@@ -178,5 +178,5 @@ In our example we can simply generate them.  All you need to do is to change in 
     },
 ```
 
-which means that, our train batch will now consist of `batch_size_train` main-group elements (corresponding to `dtheta=2`) + `n_outliers` defect elements (corresponding to `dtheta=2.1`), i.e. 100 + 8 = 118. The main-group elements will be treated as before, i.e. the model will be optimized to get the best recovery, whereas for the last 8 defect elements the contrastive loss only will be applied.
+which means that, our train batch will now consist of `batch_size_train` main-group elements (corresponding to `dtheta=2`) + `n_outliers` defect elements (corresponding to `dtheta=2.1`), i.e. 100 + 8 = 118. The main-group elements will be treated as before, i.e. the model will be optimized to get the best recovery, whereas for the last 8 defect elements only contrastive loss will be minimized (of course, in combination with the main-group elements according to the <a href="#loss">loss expression</a>). 
  
