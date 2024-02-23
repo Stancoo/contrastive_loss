@@ -162,7 +162,7 @@ Lets collect all these histograms in one plot:
   <img src="pics/res_traditional/hist_traditional.svg" width=80% />
 </p>
 
-As it follows, even extremely small deviations from the main group (the latter is seen as black vertical line very close to the origin), such as `theta=2.1` or `theta=1.9` (in gray and orange), can be distinguished in the loss histogram by the model.
+As it follows, even extremely small deviations from the main group (the latter is seen as black vertical line very close to the origin), such as `dtheta=2.1` or `dtheta=1.9` (in gray and orange), can be distinguished in the loss histogram by the model.
 Indeed, in the range of ${\rm loss}<500$  it is difficult to notice the recovery inaccuracies. Only for ${\rm loss}>550$  they become noticeably pronounced (completely random case). This just indicates that the AE model is sufficiently fit for the selected with 2-degree step rotated main group.
 
 ### Contrastive loss
