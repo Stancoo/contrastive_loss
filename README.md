@@ -162,4 +162,4 @@ Lets collect all these histograms in one plot:
   <img src="pics/res_traditional/hist_traditional.svg" width=80% />
 </p>
 
-As it follows, even extremely small deviations from the main group (black rods, very close to the origin), such as `theta=2`, such as `theta=2.1, 1.9` (in gray and orange), can be distinguished in the loss histogram by the model.
+As it follows, even extremely small deviations from the main group (seen as black vertical line very close to the origin), such as `theta=2`, such as `theta=2.1, 1.9` (in gray and orange), can be distinguished in the loss histogram by the model.
