@@ -176,7 +176,7 @@ In our example we can simply generate them.  All you need to do is to change in 
 	"n_outliers_val": 2,
 	"dtheta": 2.1
     },
-``
+```
 
 which means that, our train batch will now consist of `batch_size_train` main-group elements (corresponding to `dtheta=2`) + `n_outliers` defects (corresponding to `dtheta=2.1`): i.e., 100 + 8 = 118. The main-group elements will be treated as before, i.e. the model will be optimized to get the best recovery, whereas for the last 8 defect elements the contrastive loss only will be applied.
  
