@@ -69,7 +69,7 @@ By starting from scratch, we first switch of contrastive loss completely, by set
 	...
     }		
 ```
-and run conventional AE training untill accepted convergecy. All relevant training parameters like number of epochs, learning rate and the training and validation batch sized  you will find in `config.json`.  To start the training all you need is:
+and run conventional AE training untill the accepted convergecy. All relevant training parameters like number of epochs, learning rate and the training and validation batch sized  you will find in `config.json`.  To start the training all you need is:
 
 `python3 main_train.py`
 
@@ -156,7 +156,7 @@ or to generate completely random sequences:
       "random_seq": "True",
       ...```
 
-Let's collect all these histograms in one plot:
+You might continue to play, inventing all possible deviations from the main group, but let's then collect all these histograms in one plot:
 
 <p align="center">
   <img src="pics/res_traditional/hist_traditional.svg" width=80% />
