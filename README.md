@@ -82,7 +82,7 @@ After each 10 epochs the script writes the validation images into `scratch` fold
   <img src="pics/scratch_traditional/2000_grt-rec_118.862.png" width=24% />
 </p>
 
-The image filenames also include the corresponding loss values: 720.331 (epoch=0), ... , 118.862 (epoch=2000). The model weights will be saved in the folder specified in the `config.json`: `"path_save_model": "model_sav"`. The loss evolution for this example looks approximately as: 
+The image filenames also include the corresponding loss values: 720.331 (epoch=0), ... , 118.862 (epoch=2000). The model weights will be saved in the folder specified in the `config.json`: `"path_save_model": "model_sav"`. The evolution of loss in this example looks approximately as: 
 <p align="center">
   <img src="pics/scratch_traditional/progress.png" width=60% />
 </p>
