@@ -197,4 +197,4 @@ Now the batch images in `scratch` folder will contain two pairs of additional co
 </p>
 
 As it follows, the first 8 pairs of columns show a good recovery in all four examples. Indeed, these are the main-group sequences and the weights were specifically optimized for them in the previous step.
-What is really interesting, is the evolution seen in the last two pairs of columns representing our defects: with more epochs their recoveries are getting worse. This is exactly caused by inclusion of the contrastive loss terms in <a href="#loss">loss expression</a>.
+What is really interesting, is the evolution seen in the last two pairs of columns representing our defects: with more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in <a href="#loss">loss expression</a>.
