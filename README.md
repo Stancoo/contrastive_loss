@@ -187,7 +187,7 @@ which means that, our train batch will now consist of `batch_size_train` main-gr
 
 `python3 main_train.py`
 
-Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs, respectively:
+Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs (the 0-th epoch corresponds to a very beginning, ), respectively:
 
 <p align="center">
   <img src="pics/scratch_contrastive/4240_grt-rec_15.1345.png" width=24% />
@@ -196,4 +196,5 @@ Now the batch images in `scratch` folder will contain two pairs of additional co
   <img src="pics/scratch_contrastive/9990_grt-rec_-1.6631.png" width=24% />
 </p>
 
-As it follows, the first 8 pairs of columns show a good recovery in all examples.
+As it follows, the first 8 pairs of columns show a good recovery in all four examples. Indeed, these are the main-group sequences and the weights were specifically optimized for them in the previous step.
+What is really interesting, is the evolution seen in the last two pairs of columns.
