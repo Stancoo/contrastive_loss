@@ -213,7 +213,23 @@ epoch       2027  loss_t  27.72786  loss_ct   8.85558  loss_v  34.80695  loss_cv
 epoch       2028  loss_t  33.44135  loss_ct   8.82414  loss_v  32.01104  loss_cv  11.52482  loss_min  25.59352
 ...
 ```
-One may notice additional terms: `loss_ct` - training contrastive loss term, `loss_cv` - validation contrastive loss term. `loss_min` represents the best achieved total validation loss: `loss+v` + `loss_cv`. 
+
+One may notice additional terms: `loss_ct` - training contrastive loss term, `loss_cv` - validation contrastive loss term. `loss_min` represents the best achieved total validation loss: `loss+v` + `loss_cv`. Contrastive terms will evolve into the negative values with growing amplitude:
+    	
+```
+...
+epoch       6479  loss_t  12.24978  loss_ct  -6.66907  loss_v  11.93339  loss_cv  -0.38260  loss_min   8.87670
+epoch       6480  loss_t  12.31834  loss_ct  -7.48233  loss_v  12.61111  loss_cv   0.34329  loss_min   8.87670
+epoch       6481  loss_t  12.61161  loss_ct  -8.00592  loss_v  11.59470  loss_cv  -1.69325  loss_min   8.87670
+epoch       6482  loss_t  12.06480  loss_ct  -7.16837  loss_v  11.98235  loss_cv  -0.84660  loss_min   8.87670
+...
+epoch      10450  loss_t  10.30223  loss_ct  -47.32193  loss_v   9.71696  loss_cv  -11.27871  loss_min  -3.92846
+epoch      10451  loss_t   9.86700  loss_ct  -47.34704  loss_v  10.17814  loss_cv  -10.97610  loss_min  -3.92846
+epoch      10452  loss_t  10.21560  loss_ct  -47.31858  loss_v  10.01949  loss_cv  -11.12569  loss_min  -3.92846
+epoch      10453  loss_t  10.51998  loss_ct  -47.36170  loss_v  10.16455  loss_cv  -11.14960  loss_min  -3.92846
+...
+
+```
 
 
 
