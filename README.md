@@ -241,7 +241,7 @@ The batch images in `scratch` folder will now contain two additional pairs of co
 
 As it follows, the first 8 pairs of columns show a good recovery in all four examples. Indeed, these are the main-group sequences and the weights were specifically optimized for them in the previous step.
 
-What is really interesting, it is the evolution of the last two pairs of columns representing our defects: by more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in the <a href="#loss">total loss expression</a>. These are the $2.1$-degree rotations corresponding to the gray peak in the <a href="#hist_traditional">recovery loss histogram</a>. Obviously now they will accumulate much larger recovery loss.
+What is really interesting, it is the evolution of the last two pairs of columns representing our defects: by more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in the <a href="#loss">total loss expression</a>. These are the $2.1$-degree rotations corresponding to the gray peak in the <a href="#hist_traditional">recovery loss histogram</a>. Obviously now they will show much larger recovery loss.
 
 
 
