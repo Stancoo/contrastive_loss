@@ -231,9 +231,7 @@ epoch      10453  loss_t  10.51998  loss_ct  -47.36170  loss_v  10.16455  loss_c
 
 ```
 
-
-
-Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs (the 0-th epoch corresponds to a very beginning, ), respectively:
+The batch images in `scratch` folder will now contain two additional pairs of columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs (the 0-th epoch corresponds to a very beginning, ), respectively:
 
 <p align="center">
   <img src="pics/scratch_contrastive/4240_grt-rec_15.1345.png" width=24% />
