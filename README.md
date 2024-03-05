@@ -247,7 +247,7 @@ What is really interesting, it is the evolution of the last two pairs of columns
 
 
 
-Now let's plot the recovery loss again:
+Now let's plot the recovery loss histogram again:
 
 
 
