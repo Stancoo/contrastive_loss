@@ -189,6 +189,25 @@ which means that, our train batch will now consist of `batch_size_train` main-gr
 
 `python3 main_train.py`
 
+Here is the sample output:
+
+```
+...load best train state
+
+epoch       1164  loss_t  196.90598  loss_ct   0.00000  loss_v  195.60784  loss_cv   0.00000  loss_min  195.60783
+epoch       1165  loss_t  197.31685  loss_ct   0.00000  loss_v  197.29655  loss_cv   0.00000  loss_min  195.60783
+epoch       1166  loss_t  196.25093  loss_ct   0.00000  loss_v  193.18580  loss_cv   0.00000  loss_min  193.18581
+epoch       1167  loss_t  196.91910  loss_ct   0.00000  loss_v  194.62261  loss_cv   0.00000  loss_min  193.18581
+epoch       1168  loss_t  196.84193  loss_ct   0.00000  loss_v  196.28388  loss_cv   0.00000  loss_min  193.18581
+epoch       1169  loss_t  197.26436  loss_ct   0.00000  loss_v  196.20689  loss_cv   0.00000  loss_min  193.18581
+epoch       1170  loss_t  196.75404  loss_ct   0.00000  loss_v  195.01287  loss_cv   0.00000  loss_min  193.18581
+epoch       1171  loss_t  197.00941  loss_ct   0.00000  loss_v  198.29799  loss_cv   0.00000  loss_min  193.18581
+epoch       1172  loss_t  197.51218  loss_ct   0.00000  loss_v  198.29078  loss_cv   0.00000  loss_min  193.18581
+epoch       1173  loss_t
+...
+```
+
+
 Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs (the 0-th epoch corresponds to a very beginning, ), respectively:
 
 <p align="center">
@@ -200,7 +219,13 @@ Now the batch images in `scratch` folder will contain two pairs of additional co
 
 As it follows, the first 8 pairs of columns show a good recovery in all four examples. Indeed, these are the main-group sequences and the weights were specifically optimized for them in the previous step.
 
-What is really interesting, it is the evolution of the last two pairs of columns representing our defects: by more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in the <a href="#loss">total loss expression</a>. These are the $2.1$-degree rotations corresponding to the gray peak in the <a href="#hist_traditional">recovery loss histogram</a>. Obviously, now they will accumulate much larger recovery loss. Lets plot the recovery loss it again:
+What is really interesting, it is the evolution of the last two pairs of columns representing our defects: by more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in the <a href="#loss">total loss expression</a>. These are the $2.1$-degree rotations corresponding to the gray peak in the <a href="#hist_traditional">recovery loss histogram</a>. Obviously, now they will accumulate much larger recovery loss.
+
+
+
+
+
+Now let's plot the recovery loss again:
 
 
 
