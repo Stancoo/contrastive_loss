@@ -163,9 +163,11 @@ or to generate completely random sequences:
 
 You might continue to play around inventing various deviations from the main group, but let's then collect all these histograms in a single plot:
 
+<a name="hist_traditional">
 <p align="center">
   <img src="pics/res_traditional/hist_traditional.svg" width=80% />
 </p>
+</a>
 
 As it follows, even extremely small deviations from the main group (the latter is seen as black vertical line very close to the origin), such as `dtheta=2.1` or `dtheta=1.9` (in gray and orange), can be distinguished in the loss histogram by the model.
 Indeed, in the range of ${\rm loss}<500$  it is difficult to notice the recovery inaccuracies. Only for ${\rm loss}>550$  they become noticeably pronounced (completely random case). This just indicates that the AE model is sufficiently fit for the selected with 2-degree step rotated main group.
@@ -198,5 +200,5 @@ Now the batch images in `scratch` folder will contain two pairs of additional co
 
 As it follows, the first 8 pairs of columns show a good recovery in all four examples. Indeed, these are the main-group sequences and the weights were specifically optimized for them in the previous step.
 
-What is really interesting, it is the evolution of the last two pairs of columns representing our defects: by more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in <a href="#loss">loss expression</a>.  
+What is really interesting, it is the evolution of the last two pairs of columns representing our defects: by more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in <a href="#loss">loss expression</a>. These are $theta=2.1$-degree rotations corresponding to the gray peak in the <a href="#hist_traditional">"traditional" loss histogram</a>.
 
