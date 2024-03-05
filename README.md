@@ -194,18 +194,27 @@ Here is the sample output:
 ```
 ...load best train state
 
-epoch       1164  loss_t  196.90598  loss_ct   0.00000  loss_v  195.60784  loss_cv   0.00000  loss_min  195.60783
-epoch       1165  loss_t  197.31685  loss_ct   0.00000  loss_v  197.29655  loss_cv   0.00000  loss_min  195.60783
-epoch       1166  loss_t  196.25093  loss_ct   0.00000  loss_v  193.18580  loss_cv   0.00000  loss_min  193.18581
-epoch       1167  loss_t  196.91910  loss_ct   0.00000  loss_v  194.62261  loss_cv   0.00000  loss_min  193.18581
-epoch       1168  loss_t  196.84193  loss_ct   0.00000  loss_v  196.28388  loss_cv   0.00000  loss_min  193.18581
-epoch       1169  loss_t  197.26436  loss_ct   0.00000  loss_v  196.20689  loss_cv   0.00000  loss_min  193.18581
-epoch       1170  loss_t  196.75404  loss_ct   0.00000  loss_v  195.01287  loss_cv   0.00000  loss_min  193.18581
-epoch       1171  loss_t  197.00941  loss_ct   0.00000  loss_v  198.29799  loss_cv   0.00000  loss_min  193.18581
-epoch       1172  loss_t  197.51218  loss_ct   0.00000  loss_v  198.29078  loss_cv   0.00000  loss_min  193.18581
-epoch       1173  loss_t
+epoch       2012  loss_t  22.26292  loss_ct   9.31342  loss_v  22.07575  loss_cv  10.16576  loss_min  32.24151
+epoch       2013  loss_t  22.31092  loss_ct   9.38032  loss_v  22.41380  loss_cv  12.06579  loss_min  32.24151
+epoch       2014  loss_t  22.35097  loss_ct   9.34304  loss_v  22.14702  loss_cv  10.30746  loss_min  32.24151
+epoch       2015  loss_t  22.31703  loss_ct   9.22858  loss_v  21.84071  loss_cv   8.95389  loss_min  30.79460
+epoch       2016  loss_t  22.20842  loss_ct   9.14695  loss_v  22.20956  loss_cv  11.60964  loss_min  30.79460
+epoch       2017  loss_t  22.16968  loss_ct   9.25171  loss_v  22.53164  loss_cv   8.11276  loss_min  30.64440
+epoch       2018  loss_t  22.28966  loss_ct   9.23498  loss_v  21.79909  loss_cv   7.92610  loss_min  29.72519
+epoch       2019  loss_t  22.03301  loss_ct   8.90203  loss_v  22.17157  loss_cv   8.83749  loss_min  29.72519
+epoch       2020  loss_t  22.30168  loss_ct   8.88872  loss_v  22.69706  loss_cv   8.86271  loss_min  29.72519
+epoch       2021  loss_t  22.13942  loss_ct   8.95030  loss_v  21.76519  loss_cv   3.82834  loss_min  25.59352
+epoch       2022  loss_t  22.16170  loss_ct   9.09391  loss_v  21.97452  loss_cv  10.40417  loss_min  25.59352
+epoch       2023  loss_t  22.17958  loss_ct   8.88447  loss_v  22.33789  loss_cv   8.60914  loss_min  25.59352
+epoch       2024  loss_t  22.43778  loss_ct   8.95103  loss_v  22.64667  loss_cv  11.38314  loss_min  25.59352
+epoch       2025  loss_t  23.06281  loss_ct   8.92239  loss_v  24.23825  loss_cv   7.21049  loss_min  25.59352
+epoch       2026  loss_t  24.45127  loss_ct   8.62613  loss_v  28.32641  loss_cv   0.75315  loss_min  25.59352
+epoch       2027  loss_t  27.72786  loss_ct   8.85558  loss_v  34.80695  loss_cv   9.76584  loss_min  25.59352
+epoch       2028  loss_t  33.44135  loss_ct   8.82414  loss_v  32.01104  loss_cv  11.52482  loss_min  25.59352
 ...
 ```
+One may notice additional terms: `loss_ct` - training contrastive loss term, `loss_cv` - validation contrastive loss term. `loss_min` represents the best achieved total validation loss: `loss+v` + `loss_cv`. 
+
 
 
 Now the batch images in `scratch` folder will contain two pairs of additional columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs (the 0-th epoch corresponds to a very beginning, ), respectively:
