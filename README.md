@@ -228,7 +228,6 @@ epoch      10451  loss_t   9.86700  loss_ct  -47.34704  loss_v  10.17814  loss_c
 epoch      10452  loss_t  10.21560  loss_ct  -47.31858  loss_v  10.01949  loss_cv  -11.12569  loss_min  -3.92846
 epoch      10453  loss_t  10.51998  loss_ct  -47.36170  loss_v  10.16455  loss_cv  -11.14960  loss_min  -3.92846
 ...
-
 ```
 
 The batch images in `scratch` folder will now contain two additional pairs of columns, corresponding to the recovery of the defects, added on top. Here are the sample images after 4240, 6450, 6510 and 9990 training epochs (the 0-th epoch corresponds to a very beginning, ), respectively:
