@@ -16,7 +16,7 @@
    viewBox="0 0 648.16914 487.3973"
    version="1.1"
    id="svg3572"
-   sodipodi:docname="hist.svg"
+   sodipodi:docname="hist_traditional.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
    id="metadata3578"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -36,12 +36,12 @@
    showgrid="false"
    showborder="true"
    inkscape:zoom="1.1800048"
-   inkscape:cx="454.29077"
+   inkscape:cx="152.17335"
    inkscape:cy="192.9055"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
-   inkscape:current-layer="g3570"
+   inkscape:current-layer="g3560"
    fit-margin-top="0"
    fit-margin-left="0"
    fit-margin-right="0"
@@ -6938,10 +6938,12 @@
    id="text3442">0</text>
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,137.5,73)"
    id="text3444">100</text>
+
 
 
    <text
@@ -6950,10 +6952,12 @@
    id="text3446">200</text>
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,257.5,73)"
    id="text3448">300</text>
+
 
 
    <text
@@ -6962,10 +6966,12 @@
    id="text3450">400</text>
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,377.5,72)"
    id="text3452">500</text>
+
 
 
    <text
@@ -6974,10 +6980,12 @@
    id="text3454">600</text>
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,497.5,73)"
    id="text3456">700</text>
+
 
 
    <text
@@ -6986,10 +6994,12 @@
    id="text3458">800</text>
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,617.5,73)"
    id="text3460">900</text>
+
 
 
    <text
@@ -6998,10 +7008,12 @@
    id="text3462">1000</text>
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,377,55)"
    id="text3464">loss</text>
+
 
 
   </g>
@@ -7034,10 +7046,12 @@
    id="text3478">0</text>
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0,0.028,0.028,0,70,163)"
    id="text3480">incidence</text>
+
 
 
   </g>
@@ -7056,6 +7070,7 @@
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,547.5,253)"
    id="text3488">dtheta=2 (native)</text>
+
 
 
    <path
@@ -7078,6 +7093,7 @@
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,547.5,233)"
    id="text3498">random</text>
+
 
 
   </g>
@@ -7106,6 +7122,7 @@
    id="text3510">dtheta=0</text>
 
 
+
   </g>
   <g
    style="fill:#9400d3;fill-rule:nonzero"
@@ -7130,6 +7147,7 @@
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,547.5,199)"
    id="text3522">dtheta=1</text>
+
 
 
   </g>
@@ -7158,6 +7176,7 @@
    id="text3534">dtheta=3</text>
 
 
+
   </g>
   <g
    style="fill:#0000ff;fill-rule:nonzero"
@@ -7184,6 +7203,7 @@
    id="text3546">dtheta=-2</text>
 
 
+
   </g>
   <g
    style="fill:#ff00ff;fill-rule:nonzero"
@@ -7207,7 +7227,10 @@
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,547.5,148)"
-   id="text3558">dtheta=2.1</text>
+   id="text3558"><tspan
+     style="-inkscape-font-specification:'Times, Nimbus Roman No9 L Bold';font-family:Times, 'Nimbus Roman No9 L';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
+     id="tspan2608">dtheta=2.1</tspan></text>
+
 
 
   </g>
@@ -7235,6 +7258,7 @@
    id="text4701"
    transform="matrix(0.028,0,0,-0.028,547.5,148)"
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'">dtheta=1.9</text>
+
 
 
   </g><g
