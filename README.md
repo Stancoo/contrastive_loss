@@ -244,10 +244,12 @@ As it follows, the first 8 pairs of columns show a good recovery in all four exa
 What is really interesting, it is the evolution of the last two pairs of columns representing our defects: by more epochs their recoveries are getting worse. This is the result of inclusion of the contrastive loss terms in the <a href="#loss">total loss expression</a>. These are the $2.1$-degree rotations corresponding to the gray peak in the <a href="#hist_traditional">recovery loss histogram</a>, which we added to the main-group batch of $2.0$-degree rotations. Their recovery loss will now become much higher.
 
 
-
-
-
 Now let's plot the recovery loss histogram again:
 
+<a name="hist_contrastive">
+<p align="center">
+  <img src="pics/res_contrastive/hist_contrastive.svg" width=80% />
+</p>
+</a>
 
 
