@@ -42,12 +42,12 @@
    fit-margin-right="0"
    fit-margin-bottom="0"
    inkscape:zoom="2.3600096"
-   inkscape:cx="596.61738"
-   inkscape:cy="248.85125"
+   inkscape:cx="445.55867"
+   inkscape:cy="265.80033"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
-   inkscape:current-layer="g2368" />
+   inkscape:current-layer="g2308" />
  <g
    transform="matrix(1,0,0,-1,-58.526629,575.4171)"
    id="g2390">
@@ -4549,10 +4549,12 @@
 
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,137.5,73)"
    id="text2248">100</text>
+
 
 
 
@@ -4563,10 +4565,12 @@
 
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,257.5,73)"
    id="text2252">300</text>
+
 
 
 
@@ -4577,10 +4581,12 @@
 
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,377.5,72)"
    id="text2256">500</text>
+
 
 
 
@@ -4591,10 +4597,12 @@
 
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,497.5,73)"
    id="text2260">700</text>
+
 
 
 
@@ -4605,10 +4613,12 @@
 
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,617.5,73)"
    id="text2264">900</text>
+
 
 
 
@@ -4619,10 +4629,12 @@
 
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,377,55)"
    id="text2268">loss</text>
+
 
 
 
@@ -4657,10 +4669,12 @@
 
 
 
+
    <text
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0,0.028,0.028,0,70,163)"
    id="text2284">incidence</text>
+
 
 
 
@@ -4691,6 +4705,7 @@
 
 
 
+
    <path
    d="m 526.5,251 v 12 h 3 v -12 z"
    id="path2298"
@@ -4718,10 +4733,7 @@
   <g
    style="fill:#000000;fill-rule:nonzero"
    id="g2308">
-   <text
-   style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
-   transform="matrix(0.028,0,0,-0.028,550.5,233)"
-   id="text2306">dtheta=random</text>
+   
 
 
 
@@ -4752,6 +4764,7 @@
 
 
 
+
   </g>
   <g
    style="fill:#9400d3;fill-rule:nonzero"
@@ -4776,6 +4789,7 @@
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,550.5,199)"
    id="text2330">dtheta=1</text>
+
 
 
 
@@ -4806,6 +4820,7 @@
 
 
 
+
   </g>
   <g
    style="fill:#0000ff;fill-rule:nonzero"
@@ -4830,6 +4845,7 @@
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,550.5,165)"
    id="text2354">dtheta=-2</text>
+
 
 
 
@@ -4862,6 +4878,7 @@
 
 
 
+
   </g>
   <g
    style="fill:#dcdcdc;fill-rule:nonzero"
@@ -4886,6 +4903,7 @@
    style="font-style:normal;font-weight:normal;font-size:600px;font-family:Times, 'Nimbus Roman No9 L'"
    transform="matrix(0.028,0,0,-0.028,550.5,131)"
    id="text2378">dtheta=1.9</text>
+
 
 
 
