@@ -119,7 +119,7 @@ where `loss_t`, `loss_v` - are the train and validation losses; `loss_min` - min
 
 
 ### Validation and analysis
-Once the training is finished let us a bit explore the results. For testing all you need is to run 
+Once the training is finished let us inspect the results. For testing all you need is to run 
 
 `python3 main_inf.py`
 
