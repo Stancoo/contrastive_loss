@@ -255,3 +255,11 @@ Now let's plot the recovery loss histogram again:
 As it turns out, the whole $2.1$-degree defect peak (gray) is pushed from its original position at $\rm loss \sim 50$ to the right end of the scale $\sim 950$. At the same time, the main-group peak (black) remains almost constant at $\sim 0$. *This is the main effect expected from the incorporation of the contrastive loss*.
 
 At the same time, we also observe some side-effects. Contrastive treating of the defect group affects few more outlier groups in a similar way. These are the $3$-degree (blue) as well as the completely random rotations (turquoise). As we see in the explicit example, three corresponding different inputs ($2.1$, $3$, random) obtain the same recovery. This indicates that certain subarea of the latent space is transformed by the decoder almost into a single point in the "real" space. At the same time, $-2$-, $0$- and $1$-degree rotation peaks are almost not affected, which means that their latent-space projections are situated out of the contrastive subarea. At the same time, the $1.9$-degree rotational peak (orange) originally centered at $\sim 50$ is getting completely destroyed and spread  up to $1000$ and higher loss values, by indicating that its latent-space projection penetrates the contrastive subarea only partially.
+
+## Requirements
+
+Ubuntu 20.04.6 LTS, Python 3.8.10
+
+use:
+
+`pip install -r requirements.txt`
