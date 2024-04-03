@@ -253,4 +253,4 @@ Now let's plot the recovery loss histogram again:
 </a>
 
 
-As it turns out, the whole $2.1$-degree peak (gray) is pushed from its original position at $\sim 50$
+As it turns out, the whole $2.1$-degree peak (gray) is pushed from its original position at $\rm loss \sim 50$
