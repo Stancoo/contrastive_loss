@@ -247,7 +247,7 @@ Now let's plot the recovery loss histogram again:
 
 <a name="hist_contrastive">
 <p align="center">
-  <img src="pics/res_contrastive/hist_contrastive.svg" width=85% />
+  <img src="pics/res_contrastive/hist_contrastive.svg" width=90% />
 </p>
 </a>
 
