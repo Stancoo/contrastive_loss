@@ -252,4 +252,4 @@ Now let's plot the recovery loss histogram again:
 </a>
 
 
-As it turns out, the whole $2.1$-degree defect peak (gray) is pushed from its original position at $\rm loss \sim 50$ to the right end of the scale $\sim 950$. At the same time, the main-group peak (black) remains almost constant at $\sim 0$. This is the main result expected from the contrastive loss account.
+As it turns out, the whole $2.1$-degree defect peak (gray) is pushed from its original position at $\rm loss \sim 50$ to the right end of the scale $\sim 950$. At the same time, the main-group peak (black) remains almost constant at $\sim 0$. This is the main effect expected from the incorporation of the contrastive loss.
